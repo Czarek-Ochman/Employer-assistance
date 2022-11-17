@@ -1,0 +1,13 @@
+version: "3.8"
+
+services:
+  employer-assistance-mysql:
+    container_name: "employer-assistance-mysql"
+    image: mysql:latest
+    environment:
+      - MYSQL_ROOT_PASSWORD=admin1
+      - MYSQL_DATABASE=employerdb
+      - MYSQL_USER=admin
+      - MYSQL_PASSWORD=admin1
+    ports:
+      - "3310:3306"
