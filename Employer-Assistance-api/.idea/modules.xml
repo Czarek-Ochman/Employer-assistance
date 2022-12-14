@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Employer-Assistance-api/Employer-Assistance-api.iml" filepath="$PROJECT_DIR$/Employer-Assistance-api/Employer-Assistance-api.iml" />
       <module fileurl="file://$PROJECT_DIR$/Employer-assisyance-client/Employer-assisyance-client.iml" filepath="$PROJECT_DIR$/Employer-assisyance-client/Employer-assisyance-client.iml" />
+      <module fileurl="file://$PROJECT_DIR$/assistance.iml" filepath="$PROJECT_DIR$/assistance.iml" />
     </modules>
   </component>
 </project>
