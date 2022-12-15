@@ -13,20 +13,13 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 
     @Override
     public void configure(WebSecurity web) throws Exception {
-        web.ignoring().antMatchers("/api/auth/**", "/v2/api-docs",
+        web.ignoring().antMatchers("/api/auth/**",
+                "/v2/api-docs",
                 "/configuration/ui",
-                "/swagger-resources",
+                "/swagger-resources/**",
                 "/configuration/security",
-                "/swagger-ui/**",
-                "/webjars/**",
-                "/favicon.ico",
-                "/**/*.png",
-                "/**/*.gif",
-                "/**/*.svg",
-                "/**/*.jpg",
-                "/**/*.html",
-                "/**/*.css",
-                "/**/*.js");
+                "/swagger-ui.html",
+                "/webjars/**");
     }
 
     @Override
