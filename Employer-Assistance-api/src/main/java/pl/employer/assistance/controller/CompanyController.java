@@ -1,25 +1,16 @@
 package pl.employer.assistance.controller;
 
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.ResponseEntity;
+import lombok.Getter;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-import pl.employer.assistance.service.CompanyService;
 
 @RestController
+@RequestMapping("/api")
 public class CompanyController {
 
-
-
-    private CompanyService companyService;
-
-    @Autowired
-    public CompanyController(CompanyService companyService) {
-        this.companyService = companyService;
-    }
-
-    @GetMapping("/jaja")
-    public ResponseEntity<String> getHello(){
-        return ResponseEntity.ok("Ale jaja");
+    @GetMapping("/hello")
+    public String sayHello(){
+        return "hello";
     }
 }

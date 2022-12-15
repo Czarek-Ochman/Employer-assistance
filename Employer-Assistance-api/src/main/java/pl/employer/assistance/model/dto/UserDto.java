@@ -9,7 +9,7 @@ import javax.validation.constraints.NotNull;
 
 @Getter
 @Setter
-public class CompanyDto {
+public class UserDto {
 
     private long id;
 
