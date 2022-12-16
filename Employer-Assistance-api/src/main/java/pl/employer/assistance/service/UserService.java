@@ -2,6 +2,7 @@ package pl.employer.assistance.service;
 
 import org.mapstruct.factory.Mappers;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
 import pl.employer.assistance.model.User;
 import pl.employer.assistance.model.dto.UserDto;
@@ -15,8 +16,8 @@ public class UserService {
 
     private final UserRepository userRepository;
     private final UserMapper mapper = Mappers.getMapper(UserMapper.class);
+    private BCryptPasswordEncoder passwordEncoder;
 
-    @Autowired
     public UserService(UserRepository userRepository) {
         this.userRepository = userRepository;
     }

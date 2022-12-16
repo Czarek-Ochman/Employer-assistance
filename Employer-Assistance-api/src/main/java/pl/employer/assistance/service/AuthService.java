@@ -4,9 +4,13 @@ import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jws;
 import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.SignatureAlgorithm;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 import pl.employer.assistance.model.User;
 import pl.employer.assistance.model.dto.UserDto;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
+import pl.employer.assistance.service.exception.ResourceNotFoundException;
 
 import javax.crypto.spec.SecretKeySpec;
 import java.security.Key;
@@ -17,6 +21,10 @@ import java.util.Date;
 public class AuthService {
 
     private final UserService userService;
+    BCryptPasswordEncoder b = new BCryptPasswordEncoder();
+
+    @Autowired
+    private PasswordEncoder passwordEncoder;
 
     final String secretKey = "thisisanicelongsecretkey12345678", // Do przeniesienia
             secretKeyEncoded = Base64.getEncoder().encodeToString(secretKey.getBytes());
@@ -34,9 +42,7 @@ public class AuthService {
 
         if(userService.existsByEmail(userDto.getEmail())) {
           User user =  userService.getUserByEmail(userDto.getEmail());
-
-//          decode encode
-//           if(user.getPassword() == userDto.getPassword()){
+            if(b.matches(userDto.getPassword(), user.getPassword())){
                long currentDate = System.currentTimeMillis();
                return Jwts.builder()
                        .setSubject(userDto.getEmail())
@@ -45,12 +51,21 @@ public class AuthService {
                        .setIssuedAt(now)
                        .setExpiration(validity)
                        .compact();
-//           }else {
-//               return "Wrong password!";
-//           }
+           }else {
+               return "Wrong password!";
+           }
         }else {
             return "User with email" + userDto.getEmail() + "does not exist!";
         }
     }
 
+
+    public UserDto registerNewUserAccount(UserDto userDto) {
+        if (userService.existsByEmail(userDto.getEmail())) {
+            throw new ResourceNotFoundException(
+                    "There is an account with that email adress:" + userDto.getEmail());
+        }
+        userDto.setPassword(passwordEncoder.encode(userDto.getPassword()));
+        return userService.addUser(userDto);
+    }
 }

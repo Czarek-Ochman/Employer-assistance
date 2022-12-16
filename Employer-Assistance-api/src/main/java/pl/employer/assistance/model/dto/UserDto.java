@@ -1,5 +1,6 @@
 package pl.employer.assistance.model.dto;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -11,6 +12,7 @@ import javax.validation.constraints.NotNull;
 @Setter
 public class UserDto {
 
+    @JsonIgnore
     private long id;
 
     @Email
