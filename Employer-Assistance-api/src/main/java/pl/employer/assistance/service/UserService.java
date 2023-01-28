@@ -32,6 +32,26 @@ public class UserService {
         }
     }
 
+    public String setAccessToken(long id, String accessToken){
+        User user = getUserByID(id);
+        user.setAccessToken(accessToken);
+        userRepository.save(user);
+        return accessToken;
+    }
+
+    public String setRefreshToken(long id, String refreshToken){
+        User user = getUserByID(id);
+        user.setRefreshToken(refreshToken);
+        userRepository.save(user);
+        return refreshToken;
+    }
+
+
+    private User getUserByID(long id) {
+        return userRepository.findById(id)
+                .orElseThrow(() -> new ResourceNotFoundException("Requested user is not present"));
+    }
+
 
     public boolean existsByEmail(String email){
       return userRepository.existsByEmail(email);

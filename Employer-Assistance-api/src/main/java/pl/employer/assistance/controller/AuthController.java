@@ -1,12 +1,12 @@
 package pl.employer.assistance.controller;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 import pl.employer.assistance.model.dto.UserDto;
 import pl.employer.assistance.service.AuthService;
 import pl.employer.assistance.service.UserService;
+
+import java.util.Map;
 
 @RestController
 @RequestMapping("/api/auth")
@@ -20,9 +20,28 @@ public class AuthController {
         this.userService = userService;
     }
 
+//    @PostMapping("/login")
+//    public ResponseEntity<Map<String, String>> login(@RequestBody UserDto userDto) {
+//        return ResponseEntity.ok(authService.login(userDto));
+//    }
+
     @PostMapping("/login")
-    public String login(@RequestBody UserDto userDto) {
-        return authService.login(userDto);
+    public ResponseEntity<Map<String, String>> login(@RequestBody UserDto userDto){
+        Map<String, String> tokens = authService.login(userDto);
+        if(tokens.containsKey("access_token")) {
+            return new ResponseEntity<>(tokens, HttpStatus.OK);
+        }
+        return new ResponseEntity<>(tokens, HttpStatus.UNAUTHORIZED);
+    }
+
+    @PostMapping("/refresh/{refreshToken}")
+    public ResponseEntity<Map<String, String>> refreshAccessToken(@PathVariable String refreshToken) {
+        Map<String, String> tokens = authService.refreshAccessToken(refreshToken);
+        if(tokens.containsKey("access_token")) {
+            return new ResponseEntity<>(tokens, HttpStatus.OK);
+        } else {
+            return new ResponseEntity<>(tokens, HttpStatus.UNAUTHORIZED);
+        }
     }
 
     @PostMapping("/register")

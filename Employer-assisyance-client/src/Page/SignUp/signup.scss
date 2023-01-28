@@ -22,6 +22,17 @@
       text-align: center;
     }
 
+    .errors{
+      margin-bottom: 15px;
+
+    .close-error{
+    margin-left: 15px;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    }
+
     button{
       background-color: #2E3B55;
       color: white;
