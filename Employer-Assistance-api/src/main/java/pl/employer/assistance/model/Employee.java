@@ -40,6 +40,7 @@ public class Employee {
     private double salary;
     private int vacationDays;
     private int sickDays;
-
+    private boolean isIll;
+    private boolean isOnVacation;
 }
 

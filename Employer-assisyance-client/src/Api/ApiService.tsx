@@ -44,6 +44,21 @@ const ApiService = {
         })
     },
 
+    addCompany(name: string, city: string, state: string, street: string, zipCode: string) {
+        return api.post(`/api/control-panel/company`, {
+            "name": name,
+            "address": {
+                "city": city,
+                "state": state,
+                "street": street,
+                "zipCode": zipCode
+            },
+            "employeeList": []
+        }, {headers: config.headerWithAuth}).then(response => {
+            return response
+        })
+    },
+
     signUp(email: string, password: string) {
         return api.post(`/api/auth/register`, {
             "email": email,
@@ -73,6 +88,31 @@ const ApiService = {
         })
     },
 
+    addEmployee(city: string, state: string, street: string, zipCode: string, employeeDepartment: string, age: any, firstName: string, lastName: string, salary: any) {
+        return api.post(`/api/control-panel/employee`, {
+            "address": {
+                "city": city,
+                "state": state,
+                "street": street,
+                "zipCode": zipCode
+            },
+            "employeeDepartment": employeeDepartment,
+            "person": {
+                "age": Number(age),
+                "firstName": firstName,
+                "lastName": lastName
+            },
+            "salary": Number(salary),
+            "sickDays": 0,
+            "vacationDays": 0,
+            "ill": false,
+            "onVacation": false
+        }, {headers: config.headerWithAuth}).then(response => {
+            return response
+        })
+    },
+
+
     getCompany() {
         let token = localStorage.getItem("accessToken") || "";
         let decodedToken = jwt_decode<MyToken>(token);
@@ -101,6 +141,46 @@ const ApiService = {
             }
         });
     },
+
+    getEmployeeById(id: any) {
+        let token = localStorage.getItem("accessToken") || "";
+        let decodedToken = jwt_decode<MyToken>(token);
+        this.checkHeaderWithAuth()
+        return api.get(`/api/control-panel/employee/`+ id, {headers: config.headerWithAuth}).then(response => {
+            return response;
+        })
+    },
+
+    editEmployee(id: string,city: string, state: string, street: string, zipCode: string, employeeDepartment: string, age: any, firstName: string, lastName: string, salary: any,
+                 ill: boolean, onVacation: boolean, sickDays: string, vacationDays: string, companyId: string,
+    ) {
+        return api.put(`/api/control-panel/employee/edit`, {
+            "id": Number(id),
+            "address": {
+                "city": city,
+                "state": state,
+                "street": street,
+                "zipCode": zipCode
+            },
+            "employeeDepartment": employeeDepartment,
+            "person": {
+                "age": Number(age),
+                "firstName": firstName,
+                "lastName": lastName
+            },
+            "company": {
+                "id": Number(companyId),
+            },
+            "salary": Number(salary),
+            "sickDays": Number(sickDays),
+            "vacationDays": Number(vacationDays),
+            "ill": ill,
+            "onVacation": onVacation
+        }, {headers: config.headerWithAuth}).then(response => {
+            return response
+        })
+    },
+
 }
 
 export default ApiService;

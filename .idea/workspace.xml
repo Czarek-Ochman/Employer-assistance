@@ -4,26 +4,26 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1d69be92-c140-4546-919c-71f079042102" name="Changes" comment="I added new endpoints login,register and swagger config">
-      <change afterPath="$PROJECT_DIR$/Employer-Assistance-api/src/main/java/pl/employer/assistance/model/Address.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Employer-Assistance-api/src/main/java/pl/employer/assistance/model/Company.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Employer-Assistance-api/src/main/java/pl/employer/assistance/model/Employee.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Employer-Assistance-api/src/main/java/pl/employer/assistance/model/Person.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Employer-Assistance-api/src/main/java/pl/employer/assistance/AssistanceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/Employer-Assistance-api/src/main/java/pl/employer/assistance/AssistanceApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Employer-Assistance-api/src/main/java/pl/employer/assistance/config/JwtFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/Employer-Assistance-api/src/main/java/pl/employer/assistance/config/JwtFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Employer-Assistance-api/src/main/java/pl/employer/assistance/config/WebSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/Employer-Assistance-api/src/main/java/pl/employer/assistance/config/WebSecurityConfig.java" afterDir="false" />
+    <list default="true" id="1d69be92-c140-4546-919c-71f079042102" name="Changes" comment="v1 beta">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Employer-Assistance-api/src/main/java/pl/employer/assistance/controller/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Employer-Assistance-api/src/main/java/pl/employer/assistance/controller/AuthController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Employer-Assistance-api/src/main/java/pl/employer/assistance/controller/CompanyController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Employer-Assistance-api/src/main/java/pl/employer/assistance/controller/CompanyController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Employer-Assistance-api/src/main/java/pl/employer/assistance/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/Employer-Assistance-api/src/main/java/pl/employer/assistance/model/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Employer-Assistance-api/src/main/java/pl/employer/assistance/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/Employer-Assistance-api/src/main/java/pl/employer/assistance/repository/UserRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Employer-Assistance-api/src/main/java/pl/employer/assistance/service/AuthService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Employer-Assistance-api/src/main/java/pl/employer/assistance/service/AuthService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Employer-Assistance-api/src/main/java/pl/employer/assistance/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Employer-Assistance-api/src/main/java/pl/employer/assistance/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Employer-Assistance-api/src/main/java/pl/employer/assistance/controller/EmployeeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Employer-Assistance-api/src/main/java/pl/employer/assistance/controller/EmployeeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Employer-Assistance-api/src/main/java/pl/employer/assistance/model/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/Employer-Assistance-api/src/main/java/pl/employer/assistance/model/Employee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Employer-Assistance-api/src/main/java/pl/employer/assistance/model/dto/EmployeeDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/Employer-Assistance-api/src/main/java/pl/employer/assistance/model/dto/EmployeeDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Employer-Assistance-api/src/main/java/pl/employer/assistance/service/EmployeeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Employer-Assistance-api/src/main/java/pl/employer/assistance/service/EmployeeService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Employer-assisyance-client/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Employer-assisyance-client/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Employer-assisyance-client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/Employer-assisyance-client/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Employer-assisyance-client/src/Api/ApiService.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/Employer-assisyance-client/src/Api/ApiService.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Employer-assisyance-client/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/Employer-assisyance-client/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Employer-assisyance-client/src/Component/Shared/ResponsiveAppBar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/Employer-assisyance-client/src/Component/Shared/ResponsiveAppBar.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Employer-assisyance-client/src/Page/Login/Login.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/Employer-assisyance-client/src/Page/Login/Login.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Employer-assisyance-client/src/Page/SignUp/Signup.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/Employer-assisyance-client/src/Page/SignUp/Signup.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Employer-assisyance-client/src/Component/Shared/MediaCard.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Employer-assisyance-client/src/Component/Shared/PositionCard.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Employer-assisyance-client/src/Page/ControlPanel/Company.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/Employer-assisyance-client/src/Page/ControlPanel/Company.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Employer-assisyance-client/src/Page/ControlPanel/ControlPanel.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/Employer-assisyance-client/src/Page/ControlPanel/ControlPanel.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Employer-assisyance-client/src/Page/ControlPanel/Employee.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/Employer-assisyance-client/src/Page/ControlPanel/Employee.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Employer-assisyance-client/src/Page/ControlPanel/company.scss" beforeDir="false" afterPath="$PROJECT_DIR$/Employer-assisyance-client/src/Page/ControlPanel/company.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Employer-assisyance-client/src/Page/ControlPanel/employee.scss" beforeDir="false" afterPath="$PROJECT_DIR$/Employer-assisyance-client/src/Page/ControlPanel/employee.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Employer-assisyance-client/src/Page/Home/Homepage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/Employer-assisyance-client/src/Page/Home/Homepage.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Employer-assisyance-client/src/Page/Home/homepage.scss" beforeDir="false" afterPath="$PROJECT_DIR$/Employer-assisyance-client/src/Page/Home/homepage.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Employer-assisyance-client/src/Page/SignUp/signup.scss" beforeDir="false" afterPath="$PROJECT_DIR$/Employer-assisyance-client/src/Page/SignUp/signup.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -103,6 +103,10 @@
     <key name="CreateClassDialog.RecentsKey">
       <recent name="pl.employer.assistance" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\czare\IdeaProjects\Employer-assistance-v1.2\Employer-assisyance-client\src\Component\Shared\Assets" />
+      <recent name="C:\Users\czare\IdeaProjects\Employer-assistance-v1.2\Employer-assisyance-client\public" />
+    </key>
   </component>
   <component name="RunManager" selected="Spring Boot.AssistanceApplication (1)">
     <configuration name="AssistanceApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
@@ -148,7 +152,14 @@
       <workItem from="1674750250431" duration="5972000" />
       <workItem from="1674807710934" duration="14080000" />
       <workItem from="1674829173265" duration="9876000" />
-      <workItem from="1674891939748" duration="16566000" />
+      <workItem from="1674891939748" duration="22102000" />
+      <workItem from="1674985171337" duration="1640000" />
+      <workItem from="1675007846438" duration="673000" />
+      <workItem from="1675065888900" duration="657000" />
+      <workItem from="1675885841660" duration="615000" />
+      <workItem from="1675932284535" duration="7000" />
+      <workItem from="1675939793503" duration="19919000" />
+      <workItem from="1676012015306" duration="13096000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1671039086076</created>
@@ -178,7 +189,14 @@
       <option name="project" value="LOCAL" />
       <updated>1671171826719</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="v1 beta">
+      <created>1674919577224</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1674919577224</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -200,7 +218,8 @@
     <MESSAGE value="jwt auth" />
     <MESSAGE value="i added swagger" />
     <MESSAGE value="I added new endpoints login,register and swagger config" />
-    <option name="LAST_COMMIT_MESSAGE" value="I added new endpoints login,register and swagger config" />
+    <MESSAGE value="v1 beta" />
+    <option name="LAST_COMMIT_MESSAGE" value="v1 beta" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Employer_assistance_v1_2$AssistanceApplication__1_.ic" NAME="AssistanceApplication (1) Coverage Results" MODIFIED="1671110484171" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />

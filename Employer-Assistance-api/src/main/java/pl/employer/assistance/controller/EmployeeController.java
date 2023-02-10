@@ -3,6 +3,7 @@ package pl.employer.assistance.controller;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.web.bind.annotation.*;
+import pl.employer.assistance.model.Employee;
 import pl.employer.assistance.model.User;
 import pl.employer.assistance.model.dto.EmployeeDto;
 import pl.employer.assistance.repository.UserRepository;
@@ -42,4 +43,13 @@ public class EmployeeController {
       return  employeeService.deleteById(id);
     }
 
+    @GetMapping("/control-panel/employee/{id}")
+    public Employee getEmployeeById(@PathVariable long id){
+        return  employeeService.getEmployeeById(id);
+    }
+
+    @PutMapping("/control-panel/employee/edit")
+    public Employee editEmployee(@RequestBody EmployeeDto employeeDto){
+        return employeeService.editEmployee(employeeDto);
+    }
 }

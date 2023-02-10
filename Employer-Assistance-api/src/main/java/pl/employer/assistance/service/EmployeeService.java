@@ -58,4 +58,24 @@ public class EmployeeService {
             return false;
         }
     }
+
+    public Employee getEmployeeById(long id){
+        return employeeRepository.getReferenceById(id);
+    }
+
+    public Employee editEmployee(EmployeeDto employeeDto) {
+        Employee employee = employeeRepository.getReferenceById(employeeDto.getId());
+        Employee employeeForUpdate = mapper.mapToEmployee(employeeDto);
+        employeeForUpdate.setCompany(employee.getCompany());
+        employeeForUpdate.setPerson(employee.getPerson());
+        employeeForUpdate.setAddress(employee.getAddress());
+        employeeForUpdate.getPerson().setFirstName(employeeDto.getPerson().getFirstName());
+        employeeForUpdate.getPerson().setLastName(employeeDto.getPerson().getLastName());
+        employeeForUpdate.getPerson().setAge(employeeDto.getPerson().getAge());
+        employeeForUpdate.getAddress().setState(employeeDto.getAddress().getState());
+        employeeForUpdate.getAddress().setCity(employeeDto.getAddress().getCity());
+        employeeForUpdate.getAddress().setStreet(employeeDto.getAddress().getStreet());
+        employeeForUpdate.getAddress().setZipCode(employeeDto.getAddress().getZipCode());
+       return employeeRepository.save(employeeForUpdate);
+    }
 }

@@ -20,11 +20,6 @@ public class AuthController {
         this.userService = userService;
     }
 
-//    @PostMapping("/login")
-//    public ResponseEntity<Map<String, String>> login(@RequestBody UserDto userDto) {
-//        return ResponseEntity.ok(authService.login(userDto));
-//    }
-
     @PostMapping("/login")
     public ResponseEntity<Map<String, String>> login(@RequestBody UserDto userDto){
         Map<String, String> tokens = authService.login(userDto);

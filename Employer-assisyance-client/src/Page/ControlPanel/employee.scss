@@ -13,18 +13,15 @@
       height: 50px;
       border-radius: 10px;
       margin-bottom: 5px;
+      cursor: pointer;
     }
   }
 
   .employee-box {
     display: flex;
-    text-align: center;
-    justify-items: center;
     justify-content: center;
 
     .employee-add-box {
-      max-width: 1600px;
-      padding:20px;
 
       .employee-text {
         font-size: 28px;
@@ -34,30 +31,36 @@
 
       .select-style {
         min-width: 222px;
+      }
 
-        .selects {
-          text-align: center;
-          justify-items: center;
-          justify-content: center;
+      .employee-three-item {
+        display: flex;
+        flex-direction: row;
+
+        .employee-item {
+          padding: 8px;
         }
       }
 
-      .employee-item {
+      .error{
+        color: red;
+        margin-top: 15px;
         margin-bottom: 15px;
       }
 
-      .add {
-
-        .add-button {
-          background-color: #2E3B55;
-          color: white;
-          padding: 10px;
-          max-width: 222px;
-          width: 100%;
-          height: 50px;
-          border-radius: 10px;
-          margin-bottom: 36px;
-        }
+        .add {
+          .add-button {
+            margin-top: 20px;
+            background-color: #2E3B55;
+            color: white;
+            padding: 10px;
+            max-width: 700px;
+            width: 100%;
+            height: 50px;
+            border-radius: 10px;
+            margin-bottom: 36px;
+            cursor: pointer;
+          }
       }
     }
   }
@@ -70,25 +73,29 @@
       background-color: #2E3B55;
       color: white;
       padding: 10px;
-      max-width: 120px;
+      max-width: 80px;
       width: 100%;
       height: 50px;
       border-radius: 10px;
-      margin-bottom: 5px;
+      margin-top: 2px;
+      margin-bottom: 2px;
+      cursor: pointer;
     }
   }
 
   .delete{
 
     .delete-button{
+      cursor: pointer;
       background-color:  #8B0000;
       color: white;
       padding: 10px;
-      max-width: 100px;
+      max-width: 80px;
       width: 100%;
       height: 50px;
       border-radius: 10px;
-      margin-bottom: 5px;
+      margin-top: 2px;
+      margin-bottom: 2px;
     }
   }
 }

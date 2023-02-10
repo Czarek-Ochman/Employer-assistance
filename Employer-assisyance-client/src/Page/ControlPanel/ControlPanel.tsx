@@ -77,7 +77,7 @@ export const ControlPanel: FunctionComponent<Props> = (props: Props) => {
                         <Employee />
                     </TabPanel>
                     <TabPanel value={value} index={2}>
-                        3
+                        Na ten moment funkcja "Magazyn" nie jest dostępna, prace będą kontunuowane.
                     </TabPanel>
                 </Box>
             </div>}
