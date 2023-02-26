@@ -29,7 +29,6 @@ const options = {
 
 
 const AlertPopup: FunctionComponent<Props> = ({title, message, onClick, label}) => {
-    const navigate = useNavigate();
 
     const showAlert = () => {
         if (onClick) {

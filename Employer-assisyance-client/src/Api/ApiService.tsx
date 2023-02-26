@@ -1,4 +1,3 @@
-import axios from "axios";
 import api from "./api";
 import jwt_decode from "jwt-decode";
 
@@ -70,11 +69,7 @@ const ApiService = {
 
     isUser() {
         let token = localStorage.getItem("accessToken") || "";
-        if (token) {
-            return true
-        } else {
-            return false
-        }
+        return !!token;
     },
 
     isCompany() {
@@ -134,11 +129,7 @@ const ApiService = {
     deleteEmployee(id: any) {
         this.checkHeaderWithAuth()
         return api.delete(`/api/control-panel/employee/`+ id, {headers: config.headerWithAuth}).then(response => {
-            if (response.status === 200) {
-                return true;
-            } else {
-                return false;
-            }
+            return response.status === 200;
         });
     },
 
@@ -180,7 +171,6 @@ const ApiService = {
             return response
         })
     },
-
 }
 
 export default ApiService;

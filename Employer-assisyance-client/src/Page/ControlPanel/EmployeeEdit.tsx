@@ -51,7 +51,6 @@ export const EmployeeEdit: FunctionComponent<Props> = ({isOpen, setIsOpen, first
         setIsOpen(false)
     }
 
-
     const editCompany = (e: any) => {
         e.preventDefault();
             api.editEmployee(id,city, state, street, zipCode, department, age, firstName, lastName, salary, isIll, isOnVacation, sickDays, vacationDays, companyId).then(response => {
@@ -63,8 +62,6 @@ export const EmployeeEdit: FunctionComponent<Props> = ({isOpen, setIsOpen, first
                 console.log(err.message)
             })
         }
-
-
 
     React.useEffect(() => {
         setId(idEmployee);

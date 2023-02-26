@@ -1,6 +1,6 @@
 import React, {FunctionComponent, useEffect, useState} from 'react';
 import "./company.scss";
-import {Button, TextField} from "@mui/material";
+import {TextField} from "@mui/material";
 import api from "../../Api/ApiService";
 
 
@@ -57,6 +57,9 @@ export const Company: FunctionComponent<Props> = (props: Props) => {
         <div className={"company"}>
             {!isCompany && <div>
                 <div>
+                    <div className={"company-text"}>
+                        Nie posiadasz żadnej firmy - stwórz ją!
+                    </div>
                     <form>
                         <div className={"input-style"}><TextField id="standard-basic" label="Nazwa firmy"
                                                                   variant="outlined"

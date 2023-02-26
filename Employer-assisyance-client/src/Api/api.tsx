@@ -1,5 +1,4 @@
 import axios from "axios";
-import {useEffect, useState} from "react";
 
 const URL = "http://localhost:8080";
 

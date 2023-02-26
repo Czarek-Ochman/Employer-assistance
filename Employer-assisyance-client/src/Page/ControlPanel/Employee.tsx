@@ -24,7 +24,6 @@ export const Employee: FunctionComponent<Props> = (props: Props) => {
     const [isOpen, setIsOpen] = useState(false);
     const [showError, setShowError] = useState(false);
     const [addEmployee, setAddEmployee] = useState(false);
-    const [editEmployee, setEditEmployee] = useState(true);
     const [isOpenDeleteModal, setIsOpenDeleteModal] = useState(false);
     const [age, setAge] = React.useState('');
     const [street, setStreet] = useState('');
@@ -36,7 +35,6 @@ export const Employee: FunctionComponent<Props> = (props: Props) => {
     const [firstName, setFirstName] = React.useState('');
     const [lastName, setLastName] = React.useState('');
     const [id, setId] = React.useState('');
-    const [alert, setAlert] = useState(false);
     const [isIll, setIsIll] = useState(false);
     const [isOnVacation, setIsOnVacation] = useState(false);
     const [idForDelete, setIdForDelete] = React.useState('');
@@ -46,7 +44,6 @@ export const Employee: FunctionComponent<Props> = (props: Props) => {
     const [companyId, setCompanyId] = React.useState('');
 
     const [employeeData, setEmployeeData] = useState<Array<{ name: string, department: string, salary: number, l4days: number, vacationDays: number, id: number, ill: boolean, onVacation: boolean }>>([]);
-
 
     if (isCompany && !isLoad) {
         api.getAllEmployees().then((res) => {
@@ -127,7 +124,6 @@ export const Employee: FunctionComponent<Props> = (props: Props) => {
         }
     }
 
-
     function createData(
         name: string,
         department: string,
@@ -148,16 +144,6 @@ export const Employee: FunctionComponent<Props> = (props: Props) => {
         }
         fetchData();
     }, []);
-
-    const handleChange = (event: SelectChangeEvent) => {
-        setDepartment(event.target.value as string);
-    };
-
-    const showAlert = (name: any, id: any) => {
-        setAlert(!alert)
-        setFirstName(name)
-        setId(id);
-    };
 
     const handleEmployee = () => {
         setAddEmployee(!addEmployee);
@@ -277,14 +263,16 @@ export const Employee: FunctionComponent<Props> = (props: Props) => {
                                     <TableCell align="right">{row.salary}</TableCell>
                                     <span className={"edit"}><button className={"edit-button"}
                                                                      onClick={() => openEditModal(row.id)}>Edytuj</button></span>
-                                    <span className={"delete"}><button onClick={() =>openDeleteModal(row.id, row.name)}
+                                    <span className={"delete"}><button onClick={() => openDeleteModal(row.id, row.name)}
                                                                        className={"delete-button"}>Usuń</button></span>
                                     <EmployeeEdit isOpen={isOpen} setIsOpen={setIsOpen} firstNameEmployee={firstName}
                                                   lastNameEmployee={lastName} departmentEmployee={department}
                                                   salaryEmployee={salary} idEmployee={id} illEmployee={isIll}
                                                   onVacationEmployee={isOnVacation}
                                                   streetEmployee={street} cityEmployee={city} zipCodeEmployee={zipCode}
-                                                  stateEmployee={state} ageEmployee={age} sickDaysEmployee={l4daysEmp} vacationDaysEmployee={vacationDaysEmp} companyIdEmployee={companyId} handleButtonClick={updateEmployeesData}
+                                                  stateEmployee={state} ageEmployee={age} sickDaysEmployee={l4daysEmp}
+                                                  vacationDaysEmployee={vacationDaysEmp} companyIdEmployee={companyId}
+                                                  handleButtonClick={updateEmployeesData}
                                     />
                                     <EmployeeDelete isOpen={isOpenDeleteModal} id={idForDelete}
                                                     setIsOpen={setIsOpenDeleteModal} name={nameForDelete}

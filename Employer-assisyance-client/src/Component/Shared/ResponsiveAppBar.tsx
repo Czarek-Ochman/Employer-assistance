@@ -7,19 +7,13 @@ import Typography from '@mui/material/Typography';
 import Menu from '@mui/material/Menu';
 import MenuIcon from '@mui/icons-material/Menu';
 import Container from '@mui/material/Container';
-import Avatar from '@mui/material/Avatar';
 import Button from '@mui/material/Button';
-import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
-import AdbIcon from '@mui/icons-material/Adb';
 import {useEffect} from "react";
-import api from "../../Api/ApiService";
 
 function ResponsiveAppBar() {
     const [anchorElNav, setAnchorElNav] = React.useState<null | HTMLElement>(null);
-    const [anchorElUser, setAnchorElUser] = React.useState<null | HTMLElement>(null);
     const [pages, setPages] = React.useState<string[]>(['Logowanie', 'Rejestracja']);
-    const [userPages, setUserPages] = React.useState<string[]>(['Panel kontrolny', 'Wyloguj']);
     const [reloaded, setReloaded] = React.useState(false);
     const handleOpenNavMenu = (event: React.MouseEvent<HTMLElement>) => {
         setAnchorElNav(event.currentTarget);
@@ -35,10 +29,6 @@ function ResponsiveAppBar() {
         }, 500);
     }
 
-    const handleOpenUserMenu = (event: React.MouseEvent<HTMLElement>) => {
-        setAnchorElUser(event.currentTarget);
-    };
-
     const handleCloseNavMenu = () => {
         setAnchorElNav(null);
     };
@@ -48,12 +38,6 @@ function ResponsiveAppBar() {
         localStorage.removeItem("refreshToken");
         window.location.reload();
     }
-
-    const handleCloseUserMenu = () => {
-        setAnchorElUser(null);
-    };
-
-    // localStorage.getItem("accessToken")
 
     useEffect(() => {
         if (localStorage.getItem("accessToken")) {
@@ -119,25 +103,6 @@ function ResponsiveAppBar() {
                             ))}
                         </Menu>
                     </Box>
-                    {/*<AdbIcon sx={{ display: { xs: 'flex', md: 'none' }, mr: 1 }} />*/}
-                    {/*<Typography*/}
-                    {/*    variant="h5"*/}
-                    {/*    noWrap*/}
-                    {/*    component="a"*/}
-                    {/*    href=""*/}
-                    {/*    sx={{*/}
-                    {/*        mr: 2,*/}
-                    {/*        display: { xs: 'flex', md: 'none' },*/}
-                    {/*        flexGrow: 1,*/}
-                    {/*        fontFamily: 'monospace',*/}
-                    {/*        fontWeight: 700,*/}
-                    {/*        letterSpacing: '.3rem',*/}
-                    {/*        color: 'inherit',*/}
-                    {/*        textDecoration: 'none',*/}
-                    {/*    }}*/}
-                    {/*>*/}
-                    {/*    LOGO*/}
-                    {/*</Typography>*/}
                     <Box sx={{flexGrow: 1}}>
                     </Box>
                     {!reloaded &&

@@ -10,15 +10,8 @@ import {Employee} from "./Employee";
 
 type Props = {};
 
-
-interface TabPanelProps {
-    children?: React.ReactNode;
-    index: number;
-    value: number;
-}
-
 function TabPanel(props: { [x: string]: any; children: any; value: any; index: any; }) {
-    const { children, value, index, ...other } = props;
+    const {children, value, index, ...other} = props;
 
     return (
         <div
@@ -29,7 +22,7 @@ function TabPanel(props: { [x: string]: any; children: any; value: any; index: a
             {...other}
         >
             {value === index && (
-                <Box sx={{ p: 3 }}>
+                <Box sx={{p: 3}}>
                     <Typography>{children}</Typography>
                 </Box>
             )}
@@ -52,8 +45,7 @@ export const ControlPanel: FunctionComponent<Props> = (props: Props) => {
         setValue(newValue);
     };
 
-
-        return (
+    return (
         <div>
 
             {!isReady && <div className={"loading"}>
@@ -61,9 +53,9 @@ export const ControlPanel: FunctionComponent<Props> = (props: Props) => {
             </div>}
 
 
-            {isReady && <div >
-                <Box sx={{ width: '100%' }}>
-                    <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
+            {isReady && <div>
+                <Box sx={{width: '100%'}}>
+                    <Box sx={{borderBottom: 1, borderColor: 'divider'}}>
                         <Tabs value={value} onChange={handleChange} aria-label="basic tabs example">
                             <Tab label="Firma" {...a11yProps(0)} />
                             <Tab label="Pracownicy" {...a11yProps(1)} />
@@ -71,18 +63,16 @@ export const ControlPanel: FunctionComponent<Props> = (props: Props) => {
                         </Tabs>
                     </Box>
                     <TabPanel value={value} index={0}>
-                        <Company />
+                        <Company/>
                     </TabPanel>
                     <TabPanel value={value} index={1}>
-                        <Employee />
+                        <Employee/>
                     </TabPanel>
                     <TabPanel value={value} index={2}>
                         Na ten moment funkcja "Magazyn" nie jest dostępna, prace będą kontunuowane.
                     </TabPanel>
                 </Box>
             </div>}
-
-
         </div>
     );
 };
