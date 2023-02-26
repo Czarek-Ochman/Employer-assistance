@@ -1,9 +1,7 @@
 package pl.employer.assistance.config;
 
-import org.springframework.boot.web.servlet.FilterRegistrationBean;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.core.Ordered;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.builders.WebSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
@@ -20,9 +18,8 @@ import springfox.documentation.service.AuthorizationScope;
 import springfox.documentation.service.SecurityReference;
 import springfox.documentation.service.SecurityScheme;
 import springfox.documentation.spi.service.contexts.SecurityContext;
+
 import java.util.Arrays;
-
-
 
 @Configuration
 @EnableWebSecurity
@@ -60,7 +57,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
         http.authorizeRequests()
                 .antMatchers("/login").permitAll()
                 .antMatchers("/register").permitAll()
-                .antMatchers("/swagger-ui.html","/v2/api-docs", "/configuration/**", "/swagger-resources/**", "/webjars/**").permitAll()
+                .antMatchers("/swagger-ui.html", "/v2/api-docs", "/configuration/**", "/swagger-resources/**", "/webjars/**").permitAll()
                 .antMatchers().authenticated()
                 .anyRequest()
                 .permitAll()
@@ -79,5 +76,4 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
         source.registerCorsConfiguration("/**", configuration);
         return source;
     }
-
 }

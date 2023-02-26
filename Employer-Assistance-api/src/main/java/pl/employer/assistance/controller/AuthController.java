@@ -1,4 +1,5 @@
 package pl.employer.assistance.controller;
+
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -21,9 +22,9 @@ public class AuthController {
     }
 
     @PostMapping("/login")
-    public ResponseEntity<Map<String, String>> login(@RequestBody UserDto userDto){
+    public ResponseEntity<Map<String, String>> login(@RequestBody UserDto userDto) {
         Map<String, String> tokens = authService.login(userDto);
-        if(tokens.containsKey("access_token")) {
+        if (tokens.containsKey("access_token")) {
             return new ResponseEntity<>(tokens, HttpStatus.OK);
         }
         return new ResponseEntity<>(tokens, HttpStatus.UNAUTHORIZED);
@@ -32,7 +33,7 @@ public class AuthController {
     @PostMapping("/refresh/{refreshToken}")
     public ResponseEntity<Map<String, String>> refreshAccessToken(@PathVariable String refreshToken) {
         Map<String, String> tokens = authService.refreshAccessToken(refreshToken);
-        if(tokens.containsKey("access_token")) {
+        if (tokens.containsKey("access_token")) {
             return new ResponseEntity<>(tokens, HttpStatus.OK);
         } else {
             return new ResponseEntity<>(tokens, HttpStatus.UNAUTHORIZED);
@@ -40,7 +41,7 @@ public class AuthController {
     }
 
     @PostMapping("/register")
-    public ResponseEntity<UserDto> register(@RequestBody UserDto user){
+    public ResponseEntity<UserDto> register(@RequestBody UserDto user) {
         return ResponseEntity.ok(authService.registerNewUserAccount(user));
     }
 }

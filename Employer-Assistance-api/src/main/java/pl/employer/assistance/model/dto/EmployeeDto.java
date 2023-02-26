@@ -5,7 +5,6 @@ import lombok.Setter;
 import pl.employer.assistance.model.Address;
 import pl.employer.assistance.model.Person;
 
-
 @Getter
 @Setter
 public class EmployeeDto {

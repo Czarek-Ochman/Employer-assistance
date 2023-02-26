@@ -4,12 +4,10 @@ import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.web.bind.annotation.*;
 import pl.employer.assistance.model.Employee;
-import pl.employer.assistance.model.User;
 import pl.employer.assistance.model.dto.EmployeeDto;
 import pl.employer.assistance.repository.UserRepository;
 import pl.employer.assistance.service.EmployeeService;
 
-import java.security.Principal;
 import java.util.List;
 
 @RestController

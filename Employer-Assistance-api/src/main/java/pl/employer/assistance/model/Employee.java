@@ -43,4 +43,3 @@ public class Employee {
     private boolean isIll;
     private boolean isOnVacation;
 }
-

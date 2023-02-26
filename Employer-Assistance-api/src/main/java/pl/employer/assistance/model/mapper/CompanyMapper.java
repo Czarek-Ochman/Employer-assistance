@@ -7,7 +7,7 @@ import pl.employer.assistance.model.dto.CompanyDto;
 @Mapper
 public interface CompanyMapper {
 
-    CompanyDto mapToCompanyDto (Company company);
+    CompanyDto mapToCompanyDto(Company company);
 
-    Company mapToCompany (CompanyDto companyDto);
+    Company mapToCompany(CompanyDto companyDto);
 }

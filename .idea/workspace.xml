@@ -4,24 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1d69be92-c140-4546-919c-71f079042102" name="Changes" comment="v2 - beta. I added website functionality">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Employer-assisyance-client/src/Api/ApiService.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/Employer-assisyance-client/src/Api/ApiService.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Employer-assisyance-client/src/Api/api.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/Employer-assisyance-client/src/Api/api.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Employer-assisyance-client/src/Component/AlertPopup.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/Employer-assisyance-client/src/Component/AlertPopup.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Employer-assisyance-client/src/Component/AlertWithOption.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Employer-assisyance-client/src/Component/MainFooter/main-footer.scss" beforeDir="false" afterPath="$PROJECT_DIR$/Employer-assisyance-client/src/Component/MainFooter/main-footer.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Employer-assisyance-client/src/Component/Security/PrivateRoutes.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/Employer-assisyance-client/src/Component/Security/PrivateRoutes.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Employer-assisyance-client/src/Component/Shared/ResponsiveAppBar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/Employer-assisyance-client/src/Component/Shared/ResponsiveAppBar.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Employer-assisyance-client/src/Component/Shared/SalaryCard.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Employer-assisyance-client/src/Component/x.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Employer-assisyance-client/src/Page/ControlPanel/Company.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/Employer-assisyance-client/src/Page/ControlPanel/Company.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Employer-assisyance-client/src/Page/ControlPanel/ControlPanel.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/Employer-assisyance-client/src/Page/ControlPanel/ControlPanel.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Employer-assisyance-client/src/Page/ControlPanel/Employee.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/Employer-assisyance-client/src/Page/ControlPanel/Employee.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Employer-assisyance-client/src/Page/ControlPanel/EmployeeEdit.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/Employer-assisyance-client/src/Page/ControlPanel/EmployeeEdit.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Employer-assisyance-client/src/Page/ControlPanel/company.scss" beforeDir="false" afterPath="$PROJECT_DIR$/Employer-assisyance-client/src/Page/ControlPanel/company.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Employer-assisyance-client/src/Page/ControlPanel/delete-modal.scss" beforeDir="false" afterPath="$PROJECT_DIR$/Employer-assisyance-client/src/Page/ControlPanel/delete-modal.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Employer-assisyance-client/src/Page/ControlPanel/employee.scss" beforeDir="false" afterPath="$PROJECT_DIR$/Employer-assisyance-client/src/Page/ControlPanel/employee.scss" afterDir="false" />
+    <list default="true" id="1d69be92-c140-4546-919c-71f079042102" name="Changes" comment="refactoring of frontend code">
+      <change beforePath="$PROJECT_DIR$/Employer-Assistance-api/src/main/java/pl/employer/assistance/config/CorsConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Employer-Assistance-api/src/main/java/pl/employer/assistance/config/JwtFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/Employer-Assistance-api/src/main/java/pl/employer/assistance/config/JwtFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Employer-Assistance-api/src/main/java/pl/employer/assistance/config/SwaggerConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/Employer-Assistance-api/src/main/java/pl/employer/assistance/config/SwaggerConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Employer-Assistance-api/src/main/java/pl/employer/assistance/config/WebSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/Employer-Assistance-api/src/main/java/pl/employer/assistance/config/WebSecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Employer-Assistance-api/src/main/java/pl/employer/assistance/controller/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Employer-Assistance-api/src/main/java/pl/employer/assistance/controller/AuthController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Employer-Assistance-api/src/main/java/pl/employer/assistance/controller/CompanyController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Employer-Assistance-api/src/main/java/pl/employer/assistance/controller/CompanyController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Employer-Assistance-api/src/main/java/pl/employer/assistance/controller/EmployeeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Employer-Assistance-api/src/main/java/pl/employer/assistance/controller/EmployeeController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -163,7 +153,7 @@
       <workItem from="1676276527101" duration="142000" />
       <workItem from="1676461049687" duration="399000" />
       <workItem from="1676983641434" duration="28000" />
-      <workItem from="1677427639362" duration="643000" />
+      <workItem from="1677427639362" duration="1186000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1671039086076</created>
@@ -207,7 +197,14 @@
       <option name="project" value="LOCAL" />
       <updated>1676029935039</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="refactoring of frontend code">
+      <created>1677428573650</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1677428573650</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -231,7 +228,8 @@
     <MESSAGE value="I added new endpoints login,register and swagger config" />
     <MESSAGE value="v1 beta" />
     <MESSAGE value="v2 - beta. I added website functionality" />
-    <option name="LAST_COMMIT_MESSAGE" value="v2 - beta. I added website functionality" />
+    <MESSAGE value="refactoring of frontend code" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactoring of frontend code" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Employer_assistance_v1_2$AssistanceApplication__1_.ic" NAME="AssistanceApplication (1) Coverage Results" MODIFIED="1671110484171" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
