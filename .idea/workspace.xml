@@ -4,14 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1d69be92-c140-4546-919c-71f079042102" name="Changes" comment="refactoring of frontend code">
-      <change beforePath="$PROJECT_DIR$/Employer-Assistance-api/src/main/java/pl/employer/assistance/config/CorsConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Employer-Assistance-api/src/main/java/pl/employer/assistance/config/JwtFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/Employer-Assistance-api/src/main/java/pl/employer/assistance/config/JwtFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Employer-Assistance-api/src/main/java/pl/employer/assistance/config/SwaggerConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/Employer-Assistance-api/src/main/java/pl/employer/assistance/config/SwaggerConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Employer-Assistance-api/src/main/java/pl/employer/assistance/config/WebSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/Employer-Assistance-api/src/main/java/pl/employer/assistance/config/WebSecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Employer-Assistance-api/src/main/java/pl/employer/assistance/controller/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Employer-Assistance-api/src/main/java/pl/employer/assistance/controller/AuthController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Employer-Assistance-api/src/main/java/pl/employer/assistance/controller/CompanyController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Employer-Assistance-api/src/main/java/pl/employer/assistance/controller/CompanyController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Employer-Assistance-api/src/main/java/pl/employer/assistance/controller/EmployeeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Employer-Assistance-api/src/main/java/pl/employer/assistance/controller/EmployeeController.java" afterDir="false" />
+    <list default="true" id="1d69be92-c140-4546-919c-71f079042102" name="Changes" comment="refactoring of backend code">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -153,7 +147,7 @@
       <workItem from="1676276527101" duration="142000" />
       <workItem from="1676461049687" duration="399000" />
       <workItem from="1676983641434" duration="28000" />
-      <workItem from="1677427639362" duration="1186000" />
+      <workItem from="1677427639362" duration="2881000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1671039086076</created>
@@ -204,7 +198,14 @@
       <option name="project" value="LOCAL" />
       <updated>1677428573650</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="refactoring of backend code">
+      <created>1677429163247</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1677429163247</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -229,7 +230,8 @@
     <MESSAGE value="v1 beta" />
     <MESSAGE value="v2 - beta. I added website functionality" />
     <MESSAGE value="refactoring of frontend code" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactoring of frontend code" />
+    <MESSAGE value="refactoring of backend code" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactoring of backend code" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Employer_assistance_v1_2$AssistanceApplication__1_.ic" NAME="AssistanceApplication (1) Coverage Results" MODIFIED="1671110484171" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
