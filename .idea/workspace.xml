@@ -4,8 +4,56 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1d69be92-c140-4546-919c-71f079042102" name="Changes" comment="refactoring of backend code">
+    <list default="true" id="1d69be92-c140-4546-919c-71f079042102" name="Changes" comment="adding a readme file">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Employer-assisyance-client/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Employer-assisyance-client/Employer-assisyance-client.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Employer-assisyance-client/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Employer-assisyance-client/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Employer-assisyance-client/public/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Employer-assisyance-client/public/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Employer-assisyance-client/public/logo192.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Employer-assisyance-client/public/logo512.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Employer-assisyance-client/public/manifest.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Employer-assisyance-client/public/robots.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Employer-assisyance-client/src/Api/ApiService.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Employer-assisyance-client/src/Api/api.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Employer-assisyance-client/src/App.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Employer-assisyance-client/src/App.test.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Employer-assisyance-client/src/App.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Employer-assisyance-client/src/Component/AlertPopup.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Employer-assisyance-client/src/Component/MainFooter/MainFooter.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Employer-assisyance-client/src/Component/MainFooter/main-footer.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Employer-assisyance-client/src/Component/Security/PrivateRoutes.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Employer-assisyance-client/src/Component/Shared/Assets/employees.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Employer-assisyance-client/src/Component/Shared/Assets/position.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Employer-assisyance-client/src/Component/Shared/Assets/salary.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Employer-assisyance-client/src/Component/Shared/Assets/workers.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Employer-assisyance-client/src/Component/Shared/ResponsiveAppBar.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Employer-assisyance-client/src/Page/ControlPanel/Company.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Employer-assisyance-client/src/Page/ControlPanel/ControlPanel.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Employer-assisyance-client/src/Page/ControlPanel/Employee.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Employer-assisyance-client/src/Page/ControlPanel/EmployeeDelete.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Employer-assisyance-client/src/Page/ControlPanel/EmployeeEdit.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Employer-assisyance-client/src/Page/ControlPanel/company.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Employer-assisyance-client/src/Page/ControlPanel/control-panel.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Employer-assisyance-client/src/Page/ControlPanel/delete-modal.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Employer-assisyance-client/src/Page/ControlPanel/employee-modal.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Employer-assisyance-client/src/Page/ControlPanel/employee.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Employer-assisyance-client/src/Page/Home/Homepage.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Employer-assisyance-client/src/Page/Home/homepage.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Employer-assisyance-client/src/Page/Login/Login.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Employer-assisyance-client/src/Page/Login/login.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Employer-assisyance-client/src/Page/SignUp/Signup.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Employer-assisyance-client/src/Page/SignUp/signup.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Employer-assisyance-client/src/index.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Employer-assisyance-client/src/logo.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Employer-assisyance-client/src/react-app-env.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Employer-assisyance-client/src/reportWebVitals.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Employer-assisyance-client/src/setupTests.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Employer-assisyance-client/tsconfig.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -147,7 +195,13 @@
       <workItem from="1676276527101" duration="142000" />
       <workItem from="1676461049687" duration="399000" />
       <workItem from="1676983641434" duration="28000" />
-      <workItem from="1677427639362" duration="2881000" />
+      <workItem from="1677427639362" duration="3321000" />
+      <workItem from="1677434701101" duration="17000" />
+      <workItem from="1677434953174" duration="4267000" />
+      <workItem from="1677500909443" duration="2704000" />
+      <workItem from="1678803588502" duration="213000" />
+      <workItem from="1678804248332" duration="153000" />
+      <workItem from="1678804413886" duration="363000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1671039086076</created>
@@ -205,7 +259,14 @@
       <option name="project" value="LOCAL" />
       <updated>1677429163247</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="adding a readme file">
+      <created>1677430701664</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1677430701664</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -231,7 +292,8 @@
     <MESSAGE value="v2 - beta. I added website functionality" />
     <MESSAGE value="refactoring of frontend code" />
     <MESSAGE value="refactoring of backend code" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactoring of backend code" />
+    <MESSAGE value="adding a readme file" />
+    <option name="LAST_COMMIT_MESSAGE" value="adding a readme file" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Employer_assistance_v1_2$AssistanceApplication__1_.ic" NAME="AssistanceApplication (1) Coverage Results" MODIFIED="1671110484171" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
