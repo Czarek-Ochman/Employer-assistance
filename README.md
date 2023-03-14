@@ -20,6 +20,11 @@ The application provides the following features:
 - MySql
 - Documentation API Swagger
 
+## Swagger
+
+![Swagger](Employer-Assistance-api/src/main/resources/Assets/swagger-employer.png)
+
+
 ## Installation
 
 1. We download Docker desktop and the MySql database and perform the initial configuration. If errors occur, we update and refresh the project using Maven.

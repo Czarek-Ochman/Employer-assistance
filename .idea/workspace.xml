@@ -4,14 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1d69be92-c140-4546-919c-71f079042102" name="Changes" comment="Removed frontend module and moved it to a new repository for better organization and easier maintenance.">
+    <list default="true" id="1d69be92-c140-4546-919c-71f079042102" name="Changes" comment="Refactoring">
+      <change afterPath="$PROJECT_DIR$/Employer-Assistance-api/src/main/resources/Assets/swagger-employer.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Employer-Assistance-api/src/main/java/pl/employer/assistance/controller/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Employer-Assistance-api/src/main/java/pl/employer/assistance/controller/AuthController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Employer-Assistance-api/src/main/java/pl/employer/assistance/controller/CompanyController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Employer-Assistance-api/src/main/java/pl/employer/assistance/controller/CompanyController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Employer-Assistance-api/src/main/java/pl/employer/assistance/controller/EmployeeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Employer-Assistance-api/src/main/java/pl/employer/assistance/controller/EmployeeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Employer-Assistance-api/src/main/java/pl/employer/assistance/service/AuthService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Employer-Assistance-api/src/main/java/pl/employer/assistance/service/AuthService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Employer-Assistance-api/src/main/java/pl/employer/assistance/service/EmployeeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Employer-Assistance-api/src/main/java/pl/employer/assistance/service/EmployeeService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Employer-Assistance-api/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Employer-Assistance-api/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,6 +87,7 @@
       <recent name="pl.employer.assistance" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\czare\IdeaProjects\Employer-assistance-v1.2\Employer-Assistance-api\src\main\resources\Assets" />
       <recent name="C:\Users\czare\IdeaProjects\Employer-assistance-v1.2\Employer-assisyance-client\src\Component\Shared\Assets" />
       <recent name="C:\Users\czare\IdeaProjects\Employer-assistance-v1.2\Employer-assisyance-client\public" />
     </key>
@@ -159,7 +156,8 @@
       <workItem from="1677500909443" duration="2704000" />
       <workItem from="1678803588502" duration="213000" />
       <workItem from="1678804248332" duration="153000" />
-      <workItem from="1678804413886" duration="951000" />
+      <workItem from="1678804413886" duration="1303000" />
+      <workItem from="1678806305452" duration="302000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1671039086076</created>
@@ -231,7 +229,21 @@
       <option name="project" value="LOCAL" />
       <updated>1678805049025</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Refactoring">
+      <created>1678805466912</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1678805466912</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Refactoring">
+      <created>1678805540112</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1678805540112</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -259,7 +271,8 @@
     <MESSAGE value="refactoring of backend code" />
     <MESSAGE value="adding a readme file" />
     <MESSAGE value="Removed frontend module and moved it to a new repository for better organization and easier maintenance." />
-    <option name="LAST_COMMIT_MESSAGE" value="Removed frontend module and moved it to a new repository for better organization and easier maintenance." />
+    <MESSAGE value="Refactoring" />
+    <option name="LAST_COMMIT_MESSAGE" value="Refactoring" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Employer_assistance_v1_2$AssistanceApplication__1_.ic" NAME="AssistanceApplication (1) Coverage Results" MODIFIED="1671110484171" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
