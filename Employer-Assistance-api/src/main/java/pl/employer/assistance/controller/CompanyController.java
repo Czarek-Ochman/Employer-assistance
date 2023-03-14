@@ -8,7 +8,7 @@ import pl.employer.assistance.model.dto.CompanyDto;
 import pl.employer.assistance.service.CompanyService;
 
 @RestController
-@RequestMapping("/api")
+@RequestMapping("/control-panel")
 public class CompanyController {
 
     private final CompanyService companyService;
@@ -17,19 +17,19 @@ public class CompanyController {
         this.companyService = companyService;
     }
 
-    @PostMapping("/control-panel/company")
+    @PostMapping("/company")
     public Company addCompany(@RequestBody CompanyDto companyDto) {
         Authentication auth = SecurityContextHolder.getContext().getAuthentication();
         String username = auth.getName();
         return companyService.addNewCompany(username, companyDto);
     }
 
-    @GetMapping("/control-panel/company/user/{id}")
+    @GetMapping("/user/{id}")
     public Boolean userHasCompany(@PathVariable long id) {
         return companyService.getCompanyByUser(id);
     }
 
-    @GetMapping("/control-panel/get/company/user/{id}")
+    @GetMapping("/company/user/{id}")
     public CompanyDto getCompanyByUserId(@PathVariable long id) {
         return companyService.getCompanyByUserId(id);
     }

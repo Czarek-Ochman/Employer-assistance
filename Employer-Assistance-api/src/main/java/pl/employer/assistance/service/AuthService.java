@@ -35,9 +35,6 @@ public class AuthService {
     final String SECRET = "2dae84f846e4f4b158a8d26681707f4338495bc7ab68151d7f7679cc5e56202dd3da0d356da007a7c28cb0b780418f4f3246769972d6feaa8f610c7d1e7ecf6a";
     final Date now = new Date(), validity = new Date(now.getTime() + 86400000);
 
-//    Key key = new SecretKeySpec(
-//            secretKey.getBytes(), SignatureAlgorithm.HS256.getJcaName());
-
 
     public AuthService(UserService userService, UserRepository userRepository) {
         this.userService = userService;
@@ -128,11 +125,8 @@ public class AuthService {
 
             if (user != null) {
                 if (refreshToken.equals(user.getRefreshToken())) {
-                    //generate new access_token
                     String accessToken = getAccessToken(user);
-                    //generate new refresh_token
                     refreshToken = generateRefreshToken(user);
-                    //save refresh_token
                     userService.setRefreshToken(user.getId(), refreshToken);
                     tokens.put("access_token", accessToken);
                     tokens.put("refresh_token", refreshToken);

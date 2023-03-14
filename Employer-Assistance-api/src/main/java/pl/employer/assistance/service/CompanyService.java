@@ -5,15 +5,10 @@ import org.springframework.stereotype.Service;
 import pl.employer.assistance.model.Company;
 import pl.employer.assistance.model.User;
 import pl.employer.assistance.model.dto.CompanyDto;
-import pl.employer.assistance.model.dto.UserDto;
 import pl.employer.assistance.model.mapper.CompanyMapper;
-import pl.employer.assistance.model.mapper.UserMapper;
 import pl.employer.assistance.repository.CompanyRepository;
 import pl.employer.assistance.repository.UserRepository;
 import pl.employer.assistance.service.exception.ResourceNotFoundException;
-
-import java.util.ArrayList;
-import java.util.List;
 
 @Service
 public class CompanyService {
@@ -21,7 +16,6 @@ public class CompanyService {
     private final CompanyRepository companyRepository;
     private final UserRepository userRepository;
     private final UserService userService;
-//    private final Add
     private final CompanyMapper mapper = Mappers.getMapper(CompanyMapper.class);
 
     public CompanyService(CompanyRepository companyRepository, UserRepository userRepository, UserService userService) {

@@ -4,10 +4,8 @@ import org.mapstruct.factory.Mappers;
 import org.springframework.stereotype.Service;
 import pl.employer.assistance.model.Company;
 import pl.employer.assistance.model.Employee;
-import pl.employer.assistance.model.EmployeeDepartment;
 import pl.employer.assistance.model.User;
 import pl.employer.assistance.model.dto.EmployeeDto;
-import pl.employer.assistance.model.mapper.CompanyMapper;
 import pl.employer.assistance.repository.CompanyRepository;
 import pl.employer.assistance.repository.EmployeeMapper;
 import pl.employer.assistance.repository.EmployeeRepository;
@@ -63,7 +61,7 @@ public class EmployeeService {
         return employeeRepository.getReferenceById(id);
     }
 
-    public Employee editEmployee(EmployeeDto employeeDto) {
+    public Employee updateEmployee(EmployeeDto employeeDto) {
         Employee employee = employeeRepository.getReferenceById(employeeDto.getId());
         Employee employeeForUpdate = mapper.mapToEmployee(employeeDto);
         employeeForUpdate.setCompany(employee.getCompany());

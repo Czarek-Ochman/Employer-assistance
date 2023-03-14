@@ -11,7 +11,7 @@ import pl.employer.assistance.service.EmployeeService;
 import java.util.List;
 
 @RestController
-@RequestMapping("/api")
+@RequestMapping("/control-panel/employees")
 public class EmployeeController {
 
     private final EmployeeService employeeService;
@@ -22,32 +22,32 @@ public class EmployeeController {
         this.userRepository = userRepository;
     }
 
-    @PostMapping("/control-panel/employee")
-    public EmployeeDto addNewEmployee(@RequestBody EmployeeDto employeeDto){
+    @PostMapping("")
+    public EmployeeDto addNewEmployee(@RequestBody EmployeeDto employeeDto) {
         Authentication auth = SecurityContextHolder.getContext().getAuthentication();
         String username = auth.getName();
-        return employeeService.addEmployee(username,employeeDto);
+        return employeeService.addEmployee(username, employeeDto);
     }
 
-    @GetMapping("/control-panel/employee/company")
+    @GetMapping("/company")
     public List<EmployeeDto> getAllEmployeeByCompanyId() {
         Authentication auth = SecurityContextHolder.getContext().getAuthentication();
         String username = auth.getName();
         return employeeService.getAllEmployeeByCompanyId(username);
     }
 
-    @DeleteMapping("/control-panel/employee/{id}")
-    public boolean deleteById(@PathVariable long id){
-      return  employeeService.deleteById(id);
+    @DeleteMapping("/{id}")
+    public boolean deleteById(@PathVariable long id) {
+        return employeeService.deleteById(id);
     }
 
-    @GetMapping("/control-panel/employee/{id}")
-    public Employee getEmployeeById(@PathVariable long id){
-        return  employeeService.getEmployeeById(id);
+    @GetMapping("/{id}")
+    public Employee getEmployeeById(@PathVariable long id) {
+        return employeeService.getEmployeeById(id);
     }
 
-    @PutMapping("/control-panel/employee/edit")
-    public Employee editEmployee(@RequestBody EmployeeDto employeeDto){
-        return employeeService.editEmployee(employeeDto);
+    @PutMapping("/update")
+    public Employee updateEmployee(@RequestBody EmployeeDto employeeDto) {
+        return employeeService.updateEmployee(employeeDto);
     }
 }
